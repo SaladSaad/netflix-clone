@@ -36,7 +36,6 @@ const Profiles = () => {
 						<div className='group flex-row w-44 mx-auto'>
 							<div className='w-44 h-44 rounded-md flex items-center justify-center border-2 border-transparent group-hover:cursor-pointer group-hover:border-white overflow-hidden'>
 								<img
-									className='bg-blue-600'
 									src='/images/default-horse.png'
 									alt='Profile image'
 								/>
