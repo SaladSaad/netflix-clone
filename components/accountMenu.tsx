@@ -8,7 +8,7 @@ interface AccountMenuProps {
 }
 
 const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
-	const { data: currentUser } = useCurrentUser();
+	const { data } = useCurrentUser();
 
 	if (!visible) {
 		return null;
@@ -23,8 +23,8 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
 						src='/images/default-blue.png'
 						alt=''
 					/>
-					<p className='text-white text-sm group-hover/item:underline'>
-						{currentUser?.name}
+					<p className='text-white text-sm group-hover/item:underline capitalize'>
+						{data?.name}
 					</p>
 				</div>
 			</div>
