@@ -8,10 +8,9 @@ const useFavorites = () => {
 		{
 			revalidateIfStale: false,
 			revalidateOnFocus: false,
-			revalidateOnMount: false,
+			revalidateOnReconnect: false,
 		}
 	);
-
 	return {
 		data,
 		error,
