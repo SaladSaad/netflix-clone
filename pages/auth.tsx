@@ -46,7 +46,7 @@ const Auth = () => {
 		} catch (error) {
 			console.log(error);
 		}
-	}, [email, [password]]);
+	}, [email, password]);
 
 	const register = useCallback(async () => {
 		try {

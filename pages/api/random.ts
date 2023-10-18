@@ -1,9 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import prismadb from '@/lib/prismadb';
 import serverAuth from '@/lib/serverAuth';
-import { endianness } from 'os';
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function random(
+	req: NextApiRequest,
+	res: NextApiResponse
+) {
 	if (req.method != 'GET') {
 		return res.status(405).end();
 	}
