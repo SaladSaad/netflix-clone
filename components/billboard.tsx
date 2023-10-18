@@ -10,7 +10,7 @@ const Billboard = () => {
 				className='w-full h-[56.25vw] object-cover brightness-[60%]'
 				src={data?.videoUrl}
 				poster={data?.thumbnailUrl}
-				autoPlay
+				//TODO: add autoplay keyword
 				muted
 				loop
 			></video>
